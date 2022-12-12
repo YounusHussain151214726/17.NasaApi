@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+
+  scroll-behavior: smooth;
+}
+
+nav {
+  border: 2px solid green;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  background-color: antiquewhite;
+}
+
+.navitems {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.fa,
+#la {
+  cursor: pointer;
+}
+
+.fa:hover {
+  text-decoration: underline;
+  color: blue;
+  filter: brightness(80%);
+}
+
+#la:hover {
+  text-decoration: underline;
+  color: blue;
+  filter: brightness(80%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: 5rem;
+}
+.container {
+  border: 2px solid black;
+  width: 700px;
+}
+.image-container {
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
+  margin-bottom: 1rem;
+}
+
+.image {
+  object-fit: cover;
+
+  width: 100%;
+  height: 100%;
+}
+
+.article {
+  padding: 0.5rem;
+}
+
+.addFav {
+  cursor: pointer;
+  color: blueviolet;
+  margin: rem 0 0 0;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.addFav:hover {
+  filter: brightness(70%);
+}
+
+.date {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.errorMessage {
+  border: 2px solid red;
+  position: absolute;
+  top: 5rem;
+  left: 35%;
+  right: 35%;
+  text-align: center;
+  color: red;
+  width: 30rem;
+  height: 7rem;
+  border-radius: 0.3em;
+  padding: 2rem;
+  text-transform: capitalize;
+  animation: show 1.2s;
+}
+
+.success {
+  position: absolute;
+  top: 8rem;
+  right: 3rem;
+  color: green;
+  width: 20rem;
+  height: 4rem;
+  border-radius: 0.3em;
+  padding: 1rem;
+  text-transform: capitalize;
+  animation: show 1.2s;
+  border: 2px solid green;
+  visibility: hidden;
+}
+
+@keyframes show {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
